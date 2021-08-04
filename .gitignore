@@ -1,0 +1,4 @@
+/backend/node_modules
+/frontend/node_modules
+
+# https://www.digitalocean.com/community/tutorials/how-to-use-node-js-modules-with-npm-and-package-json-es url para instalar
