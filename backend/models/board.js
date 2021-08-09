@@ -10,4 +10,4 @@ const boardSchema = new mongoose.Schema({
 });
 
 const board = mongoose.model("board", boardSchema);
-module.exports(board);
+module.exports = board;
