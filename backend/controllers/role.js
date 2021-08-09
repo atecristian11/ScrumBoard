@@ -25,11 +25,11 @@ const registerRole = async (req, res) => {
 };
 //lista los roles
 const listRole = async (req, res) => {
-    //traigame todo de la colección Role
-    const role=await Role.find()
-    //valido si no encuentra resultados
-    if(!role) return res.status(401).send("No Role")
-    return res.status(200).send({role})
+  //traigame todo de la colección Role
+  const role = await Role.find();
+  //valido si no encuentra resultados
+  if (!role) return res.status(401).send("No Role");
+  return res.status(200).send({ role });
 };
 
 module.exports = { registerRole, listRole };
