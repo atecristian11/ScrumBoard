@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "@cristhiancode",
+  "author": "@Cristhiancode",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
