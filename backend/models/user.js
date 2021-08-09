@@ -2,7 +2,7 @@ const mongoose = require("mongoose"); //con esta traemos la libreria de mongo
 const jwt = require("jsonwebtoken");
 const moment = require("moment"); //sirve para dar formatos de fecha
 
-//sirve para crear el esquemma de usuario en la bd dentro de un json
+//sirve para crear el esquema de usuario en la bd dentro de un json
 const userSchema = new mongoose.Schema({
   name: String,
   email: String,
