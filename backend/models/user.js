@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String,
-  roledId: { type: mongoose.Schema.ObjectId, ref: "role" }, //con este le decimos a la bd que va tener un id con ObjID y la referencia es de role
+  roleId: { type: mongoose.Schema.ObjectId, ref: "role" }, //con este le decimos a la bd que va tener un id con ObjID y la referencia es de role
   date: { type: Date, default: Date.now },
   dbStatus: Boolean,
 });

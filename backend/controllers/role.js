@@ -28,7 +28,7 @@ const listRole = async (req, res) => {
   //traigame todo de la colección Role
   const role = await Role.find();
   //valido si no encuentra resultados
-  if (!role) return res.status(401).send("No Role");
+  if (!role || role.length === 0) return res.status(401).send("No Role");
   return res.status(200).send({ role });
 };
 
