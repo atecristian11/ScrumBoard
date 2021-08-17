@@ -13,7 +13,7 @@ const auth = async (req, res, next) => {
   if (!jwtToken) return res.status(400).send("Authorization denied: No token");
 
   try {
-    const payload = await jwt.verify(jwtToken, process.env.SECRET_KEY_JWT); //con el verify miramos si el jstToken si es valido y tambien miramos que si tenga la palabra clave que nosotros hemos creado
+    const payload = await jwt.verify(jwtToken, process.env.SECRET_KEY_JWT); //con el verify miramos si el jstToken si es valido y tambien miramos que si tenga la palabra clave que nosotros hemos creado y el payload es el cuerpo del json que tenemos creado en el modelo user
     req.user = payload; //aqui le asignamos el payload al usuario que se esta loguiando si todo esta bien
     next(); //con este continua con el proceso que el desee
   } catch (e) {
