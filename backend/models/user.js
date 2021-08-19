@@ -18,6 +18,7 @@ userSchema.methods.generateJWT = function () {
     {
       _id: this._id, //el this hace referencia a losdatos locales del json de userSchema
       name: this.name,
+      roleId: this.roleId,
       iat: moment().unix(), //con este ya obtenemos ese codigo cuando se genere el jsonwebtoken
     },
     process.env.SECRET_KEY_JWT //con este le colocamos nuestra palabra clave a los documentos
